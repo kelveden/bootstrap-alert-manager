@@ -139,5 +139,17 @@ describe("The Alert Manager", function () {
 
         expect($('.floating-alert')).not.toExist();
     });
+
+    it("can create a floating alert container for convenience", function () {
+
+        $('.alert-container').remove();
+
+        var container = alertManager.floatingContainer();
+        $('body').append(container);
+
+        alertManager.error("message1").showFloated();
+
+        expect(container.find('.floating-alert')).toExist();
+    });
 });
 

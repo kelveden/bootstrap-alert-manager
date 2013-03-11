@@ -41,7 +41,6 @@ var alertManager = (function () {
             }
 
             alert.showFloated = function (container) {
-                alert.removeClass('docked-alert');
                 alert.addClass('floating-alert');
 
                 addAlertToContainer(this, container);
@@ -50,7 +49,6 @@ var alertManager = (function () {
             };
 
             alert.showDocked = function (container) {
-                alert.removeClass('floating-alert');
                 alert.addClass('docked-alert');
 
                 addAlertToContainer(this, container);
@@ -66,6 +64,9 @@ var alertManager = (function () {
             } else {
                 $('.alert-container .alert').remove();
             }
+        },
+        floatingContainer = function () {
+            return $("<div/>", { "class": "alert-container floating-alert-container" });
         };
 
     return {
@@ -81,8 +82,7 @@ var alertManager = (function () {
         info: function (message, moreInfo) {
             return buildAlert(message, "info", moreInfo);
         },
-        closeAll: function (container) {
-            closeAll(container);
-        }
+        closeAll: closeAll,
+        floatingContainer : floatingContainer
     };
 }());
