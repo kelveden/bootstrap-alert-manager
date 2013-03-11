@@ -1,0 +1,19 @@
+.alert-container {
+    z-index:1050;
+}
+
+.floating-alert {
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-radius:6px;
+    box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);
+    background-clip:padding-box;
+    -webkit-border-radius:6px;
+    -webkit-box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip:padding-box;
+    -moz-border-radius:6px;
+    -moz-box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-background-clip:padding-box;
+    outline:none;
+}
+
