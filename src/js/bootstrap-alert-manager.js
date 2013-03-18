@@ -1,4 +1,8 @@
 /*globals $*/
+/*!
+ (c) 2013 Alistair Dutton
+ License: http://opensource.org/licenses/MIT
+ */
 var alertManager = (function () {
 
     "use strict";
@@ -83,6 +87,6 @@ var alertManager = (function () {
             return buildAlert(message, "info", moreInfo);
         },
         closeAll: closeAll,
-        floatingContainer : floatingContainer
+        floatingContainer: floatingContainer
     };
 }());
