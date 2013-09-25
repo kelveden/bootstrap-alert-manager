@@ -9,11 +9,11 @@ module.exports = function (grunt) {
                 files: [
                     {
                         src: 'src/js/<%= pkg.name %>.js',
-                        dest: 'build/<%= pkg.name %>-<%= pkg.version %>.js'
+                        dest: 'build/<%= pkg.name %>.js'
                     },
                     {
                         src: 'src/css/<%= pkg.name %>.css',
-                        dest: 'build/<%= pkg.name %>-<%= pkg.version %>.css'
+                        dest: 'build/<%= pkg.name %>.css'
                     }
                 ]
             }
@@ -25,13 +25,13 @@ module.exports = function (grunt) {
             },
             build: {
                 src: 'src/js/<%= pkg.name %>.js',
-                dest: 'build/<%= pkg.name %>-<%= pkg.version %>.min.js'
+                dest: 'build/<%= pkg.name %>.min.js'
             }
         },
         cssmin: {
             build: {
                 src: 'src/css/<%= pkg.name %>.css',
-                dest: 'build/<%= pkg.name %>-<%= pkg.version %>.min.css'
+                dest: 'build/<%= pkg.name %>.min.css'
             }
         },
         jslint: {

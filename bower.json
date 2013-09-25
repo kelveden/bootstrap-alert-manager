@@ -1,13 +1,15 @@
 {
     "name": "bootstrap-alert-manager",
     "version": "0.1.6",
-    "main": "build/*",
+    "main": [
+        "build/bootstrap-alert-manager.css",
+        "build/bootstrap-alert-manager.js",
+        "build/bootstrap-alert-manager.min.css",
+        "build/bootstrap-alert-manager.min.js"
+    ],
     "license": "MIT",
     "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
+        "*.*",
+        "src"
     ]
 }
