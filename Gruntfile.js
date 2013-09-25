@@ -41,10 +41,10 @@ module.exports = function (grunt) {
                 'test/js/*.js'
             ]
         },
-        testacular: {
+        karma: {
             unit: {
                 options: {
-                    configFile: 'testacular.conf.js',
+                    configFile: 'karma.conf.js',
                     autoWatch: false,
                     singleRun: true,
                     keepalive: true
@@ -55,9 +55,9 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-testacular');
+    grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-css');
 
-    grunt.registerTask('default', [ 'jslint', 'testacular:unit', 'uglify', 'cssmin', 'copy' ]);
+    grunt.registerTask('default', [ 'jslint', 'karma:unit', 'uglify', 'cssmin', 'copy' ]);
 };
