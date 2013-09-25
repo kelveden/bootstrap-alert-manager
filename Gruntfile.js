@@ -51,7 +51,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        grunt: {
+        bump: {
             options: {
                 pushTo: "origin"
             }
