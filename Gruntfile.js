@@ -50,6 +50,11 @@ module.exports = function (grunt) {
                     keepalive: true
                 }
             }
+        },
+        grunt: {
+            options: {
+                pushTo: "origin"
+            }
         }
     });
 
@@ -58,6 +63,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-css');
+    grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('default', [ 'jslint', 'karma:unit', 'uglify', 'cssmin', 'copy' ]);
 };
