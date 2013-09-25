@@ -2,7 +2,7 @@
     "author": "https://github.com/kelveden",
     "name": "bootstrap-alert-manager",
     "description": "Bootstrap-driven floating alerts",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "homepage": "http://github.com/kelveden/bootstrap-alert-manager",
     "repository": {
         "type": "git",
