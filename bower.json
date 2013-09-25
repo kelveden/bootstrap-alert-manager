@@ -9,7 +9,10 @@
     ],
     "license": "MIT",
     "ignore": [
-        "*.*",
+        "*.json",
+        "*.md",
+        "Gruntfile.js",
+        "karma.conf.js",
         "src",
         "test"
     ]
