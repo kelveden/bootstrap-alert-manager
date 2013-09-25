@@ -1,0 +1,13 @@
+{
+    "name": "bootstrap-alert-manager",
+    "version": "0.1.0",
+    "main": "build/*",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
