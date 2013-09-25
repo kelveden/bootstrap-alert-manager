@@ -1,6 +1,6 @@
 {
     "name": "bootstrap-alert-manager",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "main": [
         "build/bootstrap-alert-manager.css",
         "build/bootstrap-alert-manager.js",
