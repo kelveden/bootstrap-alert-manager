@@ -80,11 +80,11 @@ var alertManager = (function () {
         warning: function (message, moreInfo) {
             return buildAlert(message, null, moreInfo, "Warning");
         },
-        success: function (message, moreInfo) {
-            return buildAlert(message, "success", moreInfo);
+        success: function (message, moreInfo, title) {
+            return buildAlert(message, "success", moreInfo, title);
         },
-        info: function (message, moreInfo) {
-            return buildAlert(message, "info", moreInfo);
+        info: function (message, moreInfo, title) {
+            return buildAlert(message, "info", moreInfo, title);
         },
         closeAll: closeAll,
         floatingContainer: floatingContainer
